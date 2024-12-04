@@ -13,6 +13,51 @@
     
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
+
+    <style>
+      div.gallery {
+        position: relative;
+        margin: 2px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 400px
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      div.gallery:hover .overlay {
+        opacity: 0.75;
+      }
+
+      div.gallery img{
+        width: 100%;
+        height: auto;
+      }
+
+      div.overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .7s ease;
+        background-color: lightblue;
+      }
+
+      .text {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
 		
@@ -53,9 +98,41 @@
 
         <!-- Page Content  -->
   <div id="content" class="p-4 p-md-5 pt-5">
-    <h2 class="mb-4">Portrait, Adventure, Sport</h2>
-    <P> This is where I will write something insightful abou tthe photography stuff I do</P>
+    <h2 class="mb-4">Portrait, Adventure, Event, Scenery</h2>
+    <P> This is where I will write something insightful about the photography stuff I do</P>
     <p> This is where I will put thumbnails and links to my 2 to 3 gallery pages</p>
+  <div class="gallery">
+    <a href="">
+        <img src="images/willow_park.jpg" alt="Portrait of woman" width="600" height="400">
+        <div class="overlay">
+          <div class="text"> Portraits </div>
+        </div>
+        </a>
+  </div>
+  <div class="gallery">
+    <a href="">
+        <img src="images/climb_man.jpg" alt="Man rock climbing" width="400" height="600">
+        <div class="overlay">
+          <div class="text"> Adventure </div>
+        </div>
+      </a>
+  </div>
+  <div class="gallery">
+    <a href="">
+        <img src="images/Dance_thumb.jpg" alt="couple Dancing" width="400" height="600">
+        <div class="overlay">
+          <div class="text"> Events </div>
+        </div>
+      </a>
+  </div>
+  <div class="gallery">
+    <a href="">
+        <img src="images/scenery_thum.jpg" alt="river and mountain scene" width="400" height="600">
+        <div class="overlay">
+          <div class="text"> Scenery </div>
+        </div>
+      </a>
+  </div>
 </div>
 		</div>
 
