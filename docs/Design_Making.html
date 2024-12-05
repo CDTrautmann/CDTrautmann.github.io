@@ -13,6 +13,51 @@
     
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
+    <style>
+      div.gallery {
+        position: relative;
+        margin: 2px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 400px
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      div.gallery:hover .overlay {
+        opacity: 0.75;
+      }
+
+      div.gallery img{
+        width: 100%;
+        height: auto;
+      }
+
+      div.overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .7s ease;
+        background-color: lightblue;
+      }
+
+      .text {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    </style>
+  
   </head>
   <body>
 		
@@ -56,6 +101,47 @@
     <h2 class="mb-4">Somethign clever about making here</h2>
     <p> This is where I'll write a little description about my making and the skills and stuff I make</p>
     <p> This is where I'll probably insert a gallery of clickable images of all the stuff I've made </p>
+    <div class="gallery">
+      <a href="Thumper_gallery.html">
+          <img src="images/making gallery/Thumper.jpg" alt="3D printed items" width="600" height="400">
+          <div class="overlay">
+            <div class="text"> Dune Thuumper </div>
+          </div>
+          </a>
+    </div>
+    <div class="gallery">
+      <a href="">
+          <img src="images/making gallery/Elko_sign.jpg" alt= "Sign of Elko garage logo" width="400" height="600">
+          <div class="overlay">
+            <div class="text"> Garage Sign </div>
+          </div>
+        </a>
+    </div>
+    <div class="gallery">
+      <a href="">
+          <img src="images/making gallery/Mando_blaster.jpg" alt="Sci-fi gun" width="400" height="600">
+          <div class="overlay">
+            <div class="text"> Mandalorian Blaster </div>
+          </div>
+        </a>
+    </div>
+    <div class="gallery">
+      <a href="">
+          <img src="images/making gallery/VI_model.jpg" alt="wooden model of an island" width="400" height="600">
+          <div class="overlay">
+            <div class="text"> Vancouver Island Model </div>
+          </div>
+        </a>
+    </div>
+    <div class="gallery">
+      <a href="">
+          <img src="images/making gallery/River_board.jpg" alt="wooden cutting board" width="400" height="600">
+          <div class="overlay">
+            <div class="text"> Epoxy River Board </div>
+          </div>
+        </a>
+    </div>
+
   </div>
 		</div>
 
